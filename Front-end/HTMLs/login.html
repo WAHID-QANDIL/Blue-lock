@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../CCSs/style.css">
 </head>
 <body>
 
-    <form>
+<div class="form">
+    <form class="login" action="../../Back-end/PHP/index.php">
         <h2>Login</h2>
         <input type="text"type="email" placeholder="Email or User_name" name="uname" required>
         <input type="password" placeholder="Password" name="psw" required>
         <button type="submit">Login</button>
         <button type="reset">Reset</button>
-        <p>Don't have an account? <a href="registration.html">Register here</a>.</p>
-      </form>
+        <p>Don't have an account? <a href="registration.html" style="color: brown;"> Register here</a> .</p>
+    </form>
+</div>
 
 </body>
 </html>

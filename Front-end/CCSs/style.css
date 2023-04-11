@@ -1,14 +1,39 @@
 body{
-    background-color: darksalmon;
+  
+  background-image: url(../Media/backgrounds/pexels-efrem-efre-13784477.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  /* background-color: rgb(44, 35, 165); */
 }
 
 
 form {
-    border: 9px solid #a14343;
-    width: 45%;
+    border: 2px solid rgb(213, 102, 17);
+    width: 40%;
     margin: 0 auto;
-    padding: 50px;
-    border-radius: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    position: fixed;
+    /* align-items: center; */
+  }
+  /* .form{
+    text-align: left;
+  } */
+  form h2 , p{
+    color: rgb(15, 166, 163);
+    font-weight: 900;
+
+
+
+  }
+  form a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+
   }
 
   input[type=text], input[type=email], input[type=password] {
@@ -31,7 +56,7 @@ form {
   }
 
   button[type=submit], button[type=reset] {
-    background-color: indianred;
+    background-color: rgb(213, 102, 17);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -43,11 +68,12 @@ form {
   }
 
   button[type=submit], button[type=reset]:hover {
-    opacity: 0.8;
+    opacity: .8;
   }
 
   a {
     color: dodgerblue;
+    display: block;
   }
 
   h2 {
