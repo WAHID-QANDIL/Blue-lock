@@ -169,7 +169,8 @@ hr.hr-heading {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #00c9db; /* needs to stay here because of the color property of a tag */
+	color: #00c9db; 
+	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
