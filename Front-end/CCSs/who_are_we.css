@@ -11,7 +11,7 @@
     /* margin-left: 30px; */
     align-items: center;
     min-height: 100vh;
-  background-image:url(../Media/home-images/header-background.jpg );
+  background-image: linear-gradient(#03a9f4, #03a9f4 45%, #fff 45%, #fff 100%);
   }
 
   .card {
