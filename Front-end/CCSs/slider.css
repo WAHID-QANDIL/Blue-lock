@@ -23,7 +23,7 @@ button {
 }
 
 header {
-	background-color: #1a1a1c;
+	background-image:url( ../Media/home-images/header-background.jpg);
 	text-shadow: 0 -1px #0a0a0a;
 	width: 100%;
 	padding: 1.8rem 2.2rem;
@@ -92,6 +92,7 @@ h2 {
 	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
 	transform: translateY(-1rem);
 	backdrop-filter: blur(1.5rem);
+
 }
 
 .item:last-child {
@@ -142,7 +143,7 @@ h2 {
 }
 
 .item button {
-	width: 100%;
+	width: 70%;
 	color: #d99904;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -152,11 +153,16 @@ h2 {
 	border: solid 1px #c98d00;
 	outline: none;
 	border-radius: 2.5rem / 50%;
-	transition: filter 500ms ease-out;
+	transition:0.9s ease;
+
 }
+
 
 .item button:hover {
 	filter: brightness(90%);
+	transform: scale(1.2);
+
+
 }
 
 .item button:active {

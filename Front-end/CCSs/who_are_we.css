@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
       font-family: 'Times New Roman', Times, serif;
     display: flex;
@@ -11,9 +11,9 @@
     /* margin-left: 30px; */
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#03a9f4, #03a9f4 45%, #fff 45%, #fff 100%);
+  background-image:url(../Media/home-images/header-background.jpg );
   }
-  
+
   .card {
     position: relative;
     width: 300px;
@@ -25,7 +25,7 @@
     backdrop-filter: blur(15px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   }
-  
+
   .img-bx {
     position: absolute;
     top: 0;
@@ -37,7 +37,7 @@
     transform: translateY(30px) scale(0.5);
     transform-origin: top;
   }
-  
+
   .img-bx img {
     position: absolute;
     top: 0;
@@ -46,7 +46,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
   .content {
     position: absolute;
     width: 100%;
@@ -56,7 +56,7 @@
     align-items: flex-end;
     padding-bottom: 30px;
   }
-  
+
   .content .detail {
     display: flex;
     justify-content: center;
@@ -64,30 +64,30 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .content .detail h2 {
     color: #444;
     font-size: 1.6em;
     font-weight: bolder;
   }
-  
+
   .content .detail h2 span {
     font-size: 0.7em;
     color: #03a9f4;
     font-weight: bold;
   }
-  
+
   .sci {
     position: relative;
     display: flex;
     margin-top: 5px;
   }
-  
+
   .sci li {
     list-style: none;
     margin: 4px;
   }
-  
+
   .sci li a {
     width: 45px;
     height: 45px;
@@ -102,9 +102,8 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transition: 0.5s;
   }
-  
+
   .sci li a:hover {
     background: #03a9f4;
     color: #fff;
   }
-  

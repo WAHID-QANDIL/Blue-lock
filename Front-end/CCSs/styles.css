@@ -42,7 +42,7 @@ html {
 }
 
 body, p {
-	color: #f1f1f8; 
+	color: #f1f1f8;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -169,7 +169,7 @@ hr.hr-heading {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #00c9db; 
+	color: #00c9db;
 	/* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
@@ -743,7 +743,7 @@ hr.hr-heading {
 	padding-top: 7.5rem;
 	padding-bottom: 8rem;
 	background: url('../images/video-background.jpg') center center no-repeat;/*missing*/
-	background-size: cover; 
+	background-size: cover;
 }
 
 .basic-1 h2 {
@@ -780,7 +780,7 @@ hr.hr-heading {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-1 .video-play-button:before {
 	content: "";
 	position: absolute;
@@ -797,7 +797,7 @@ hr.hr-heading {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-1 .video-play-button:after {
 	content: "";
 	position: absolute;
@@ -814,7 +814,7 @@ hr.hr-heading {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-1 .video-play-button span {
 	position: relative;
 	display: block;
@@ -827,7 +827,7 @@ hr.hr-heading {
 	border-top: 1rem solid transparent;
 	border-bottom: 1rem solid transparent;
 }
-  
+
 @keyframes pulse-border {
 	0% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -1064,7 +1064,7 @@ hr.hr-heading {
 	padding-top: 7.75rem;
 	padding-bottom: 8.125rem;
 	background: url('../images/download-background.jpg') center center no-repeat;
-	background-size: cover; 
+	background-size: cover;
 }
 
 .basic-4 .text-container {
@@ -1159,18 +1159,18 @@ hr.hr-heading {
 /*     Back To Top Button     */
 /******************************/
 #myBtn {
-	position: fixed; 
-  	z-index: 99; 
-	bottom: 20px; 
-	right: 20px; 
-	display: none; 
+	position: fixed;
+  	z-index: 99;
+	bottom: 20px;
+	right: 20px;
+	display: none;
 	width: 52px;
 	height: 52px;
-	border: none; 
-	border-radius: 50%; 
-	outline: none; 
-	background-color: #3b384b; 
-	cursor: pointer; 
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	background-color: #3b384b;
+	cursor: pointer;
 }
 
 #myBtn:hover {
@@ -1244,7 +1244,7 @@ hr.hr-heading {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	border: none; 
+	border: none;
 }
 
 .ex-cards-1 .card {
@@ -1476,7 +1476,7 @@ hr.hr-heading {
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1492,7 +1492,7 @@ hr.hr-heading {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
-	
+
 	.slider-2 .swiper-button-next {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
@@ -1543,7 +1543,7 @@ hr.hr-heading {
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
+
 	/* General Styles */
 	.h2-heading {
 		width: 35.25rem;
@@ -1562,16 +1562,16 @@ hr.hr-heading {
 		overflow-y: scroll !important;
 		padding-right: 0 !important;
 	}
-	
+
 	body.modal-open .navbar {
 		padding-right: 0 !important;
 	}
 	/* end of stops body and navbar shift on modal open */
-	
+
 	.modal {
 		padding-right: 0 !important;
 	}
-	
+
 	.modal-dialog {
 		margin-right: auto;
 		margin-left: auto;
@@ -1620,7 +1620,7 @@ hr.hr-heading {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.75rem;
 		padding-left: 0.75rem;
@@ -1639,7 +1639,7 @@ hr.hr-heading {
 	.navbar .social-icons {
 		margin-left: 0.5rem;
 	}
-	
+
 	.navbar .fa-stack {
 		margin-right: 0;
 		margin-left: 0.25rem;
@@ -1673,7 +1673,7 @@ hr.hr-heading {
 	.slider-1 .swiper-button-prev {
 		left: -20px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -20px;
 	}
@@ -1684,13 +1684,13 @@ hr.hr-heading {
 	.tabs-1 #tab-1 .list-unstyled.first .d-flex {
 		flex-direction: row-reverse;
 	}
-	
+
 	.tabs-1 #tab-1 .list-unstyled.first .flex-grow-1 {
 		margin-left: 0;
 		margin-right: 1rem;
 		text-align: right;
 	}
-	
+
 	.tabs-1 #tab-1 img {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -1713,14 +1713,14 @@ hr.hr-heading {
 		margin-left: auto;
 	}
 	/* end of video */
-	
-	
+
+
 	/* Video Modal */
 	.video-modal .modal-dialog {
 		margin-top: 7%;
 	}
 	/* end of video modal */
-	
+
 
 	/* Details 1 */
 	.basic-2 .image-container {
@@ -1789,14 +1789,14 @@ hr.hr-heading {
 		margin-right: 1.75rem;
 		vertical-align: top;
 	}
-	
+
 	.footer .footer-col.second {
 		display: inline-block;
 		width: 320px;
 		margin-right: 1.75rem;
 		vertical-align: top;
 	}
-	
+
 	.footer .footer-col.third {
 		display: inline-block;
 		width: 224px;
@@ -1829,13 +1829,13 @@ hr.hr-heading {
 
 /* Min-width 1200px */
 @media (min-width: 1200px) {
-	
+
 	/* General Styles */
 	.container {
 		max-width: 1140px;
 	}
 	/* end of general styles */
-	
+
 
 	/* Header */
 	.header {
@@ -1846,7 +1846,7 @@ hr.hr-heading {
 		margin-top: 8.5rem;
 		margin-left: 1.5rem;
 	}
-	
+
 	.header .h1-large {
 		font-size: 3.25rem;
 		line-height: 4rem;
@@ -1866,7 +1866,7 @@ hr.hr-heading {
 	.slider-1 .swiper-button-prev {
 		left: -26px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -26px;
 	}
@@ -1894,7 +1894,7 @@ hr.hr-heading {
 	.tabs-1 .list-unstyled .flex-grow-1 {
 		margin-left: 1.25rem;
 	}
-	
+
 	.tabs-1 img {
 		width: 18.75rem;
 	}
@@ -1912,7 +1912,7 @@ hr.hr-heading {
 		margin-right: 1.25rem;
 	}
 
-	.tabs-1 #tab-2 h3 { 
+	.tabs-1 #tab-2 h3 {
 		margin-top: 0.5rem;
 	}
 
@@ -2007,7 +2007,7 @@ hr.hr-heading {
 	.slider-2 .swiper-button-prev {
 		left: -2rem;
 	}
-	
+
 	.slider-2 .swiper-button-next {
 		right: -2rem;
 	}
@@ -2027,11 +2027,11 @@ hr.hr-heading {
 		width: 352px;
 		margin-right: 6rem;
 	}
-	
+
 	.footer .footer-col.second {
 		margin-right: 6.5rem;
 	}
-	
+
 	.footer .footer-col.third {
 		text-align: right;
 	}
