@@ -24,7 +24,7 @@ header{
     text-decoration: none;
     /* display: flex; */
     justify-content: space-between;
-    color: aliceblue;
+   color: aliceblue;
     font-weight: 500;
     padding-left: 25;
 
@@ -37,6 +37,6 @@ header{
     text-align: right;
     justify-content: space-between;
 
-    
+
 
 }
