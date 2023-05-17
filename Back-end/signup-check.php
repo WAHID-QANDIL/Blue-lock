@@ -1,10 +1,10 @@
-<?php 
-session_start(); 
+<?php
+session_start();
 include "db_conn.php";
 
 if (isset($_POST['uname']) && isset($_POST['password'])
     && isset($_POST['name']) && isset($_POST['re_password'])) {
-
+// filtratio
 	function validate($data){
        $data = trim($data);
 	   $data = stripslashes($data);
@@ -48,7 +48,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 		// hashing the password
         $pass = md5($pass);
 
-	    $sql = "SELECT * FROM users WHERE user_name='$uname' ";
+	   $sql = "SELECT * FROM users WHERE user_name='$uname' ";
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) > 0) {
@@ -66,7 +66,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
            }
 		}
 	}
-	
+
 }else{
 	header("Location: signup.php");
 	exit();
