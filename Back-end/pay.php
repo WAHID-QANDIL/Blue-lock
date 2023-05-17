@@ -1,3 +1,27 @@
+<?php
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
+
+ ?>
+
+<?php
+if(isset($_POST['botn1'])){
+$Asics= ($_POST['size']);
+$ff=$Asics*6;
+$f=$Asics;
+}
+if(isset($_POST['botn2'])){
+$Adidas= ($_POST['size']);
+$ff=$Adidas*10;
+$f=$Adidas;
+}
+if(isset($_POST['botn3'])){
+$New_Balance= ($_POST['size']);
+$ff=$New_Balance*15;
+$f=$New_Balance;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,6 +74,15 @@
 
 							<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
 									<ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <div class=""style="	margin-right:300px;">
+
+                        <li class="nav-item">
+                             <h1>Hello, <?php echo $_SESSION['name'] ?></h1>
+                        </li>
+
+
+
+                    </div>
 											<li class="nav-item">
 													<a class="nav-link" href="../Front-end/HTMLs/index.html">Home</a>
 											</li>
@@ -99,55 +132,32 @@
 			</nav> <!-- end of navbar -->
 			<!-- end of navigation -->
 			<!-- end of navigation -->
-<br><br><br><br><br><br><br><br>
-
-     <form action="signup-check.php" method="post" >
-     	<h2 style="color:black;	text-align: center;	margin-bottom: 40px;">SIGN UP</h2>
-     	<?php if (isset($_GET['error'])) { ?>
-     		<p class="error"><?php echo $_GET['error']; ?></p>
-     	<?php } ?>
-
-          <?php if (isset($_GET['success'])) { ?>
-               <p class="success"><?php echo $_GET['success']; ?></p>
-          <?php } ?>
-
-          <label>Name</label>
-          <?php if (isset($_GET['name'])) { ?>
-               <input type="text"name="name"
-                       placeholder="Name"
-                      value="<?php echo $_GET['name']; ?>"><br>
-          <?php }else{ ?>
-               <input type="text"
-                      name="name"
-                      placeholder="Name"><br>
-          <?php }?>
-
-          <label>User Name</label>
-          <?php if (isset($_GET['uname'])) { ?>
-               <input type="text"
-                      name="uname"
-                      placeholder="User Name"
-                      value="<?php echo $_GET['uname']; ?>"><br>
-          <?php }else{ ?>
-               <input type="text"
-                      name="uname"
-                      placeholder="User Name"><br>
-          <?php }?>
 
 
-     	<label>Password</label>
-     	<input type="password"
-                 name="password"
-                 placeholder="Password"><br>
+<form  action="thank.php" method="get">
 
-          <label>Re Password</label>
-          <input type="password"
-                 name="re_password"
-                 placeholder="Re_Password"><br>
+  <div class="cardd">
 
-     	<button type="submit" class="button">Sign Up</button>
-          <a href="index.php" class="ca">Already have an account?</a>
-     </form>
+
+      <h1 style="color:black;">Cheek out</h1>
+  <br>
+  <table>
+    <tr>
+    <td><h2 style="color:black;" >total hours :</h2></td><td><h2 style="color:black;"><?php echo "  ".$f." HOURS"; ?></h2></td>
+    </tr>
+    <tr>
+      <td><h2 style="color:black;">total salary  :</h2></td><td><h2 style="color:black;"><?php echo "  ".$ff."$"; ?></h2></td>
+    </tr>
+  </table>
+
+  </div><br>
+ <label for="">payment</label>
+ <input type="text" placeholder="card-code"><br>
+  <button class="button" type="submit" name="rental">Rental</button>
+  <button class="button" type="button" style="margin-right:16rem;" >  <a href="logout.php" id="logout"> Logout</a></button>
+
+</form>
+
 
 
 		 		 <script src="../Front-end/Front-end/CCSs/bootstrap.min.css"></script> <!-- Bootstrap framework -->
@@ -157,3 +167,9 @@
 		 		 <script src="JS/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
+<?php
+}else{
+     header("Location: index.php");
+     exit();
+}
+ ?>

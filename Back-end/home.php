@@ -120,7 +120,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
 
 
 
-    <header >
+    <header>
 <h1 id="brand-name">BLUE-LOCK</h1>
 <p class="tagline">Safe Delivery, all Users</p>
 
@@ -140,10 +140,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <!-- full size image at: https://images.unsplash.com/photo-1560072810-1cffb09faf0f -->
 
         </figure>
+  <form class="fff" action="http://localhost/Blue-lock/Back-end/pay.php" method="post" >
         <p class="price">$6 USA</p>
         <p class="special">Take one now !</p>
-        <label for="size-select">Time:/h</label>
-        <select name="size" id="size-select">
+        <div class="">
+
+        <label for="size-select">Time:/h</label><br>
+        <select name="size" id="size-select" style="width:65%;">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -157,15 +160,23 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <option value="10">11</option>
             <option value="10">12</option>
         </select>
-        <label for="color-select">Color:</label>
-        <select name="color" id="color-select">
+          </div>
+          <div id="quantity-select">
+
+
+        <label for="color-select">Color  : </label><br>
+        <select name="colorr" id="color-select"style="width:65%;">
             <option value=""></option>
             <option value="blue" >blue</option>
             <option value="red">red</option>
             <option value="black">black</option>
         </select>
-        <label for="quantity-select">Quantity:</label>
-        <select name="quantity" id="quantity-select">
+        </div>
+        <div id="quantity-select">
+
+
+        <label for="quantity-select">Quantity:</label><br>
+        <select name="quantityy" id="quantity-select"style="width:65%;">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -173,13 +184,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-
-            <button type="button">Add to Cart</button>
-
+            </div>
+            <button type="submit" name="botn1">Add to Cart</button>
+                  </form>
 
     </div>
 
+
     <div class="item">
+      <form class="fff" action="http://localhost/Blue-lock/Back-end/pay.php" method="post" >
         <h3>Adidas</h3>
         <figure>
             <img src="../Front-end/Media/home-images/testimonial-5.jpg"  alt="a New Balance scoter in olive drab with a black logo">
@@ -189,8 +202,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
         <p class="price">$10 USD</p>
 
         <p class="special">Take one now !</p>
-        <label for="size-select">Time:/h</label>
-        <select name="size" id="size-select">
+        <div class="">
+
+
+        <label for="size-select">Time:/h</label><br>
+        <select name="size" id="size-select" style="width:65%;">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -204,15 +220,19 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <option value="10">11</option>
             <option value="10">12</option>
         </select>
-        <label for="color-select">Color:</label>
-        <select name="color" id="color-select">
+        </div>
+        <div id="quantity-select">
+        <label for="color-select">Color:</label><br>
+        <select name="color" id="color-select" style="width:65%;">
             <option value=""></option>
             <option value="blue" >blue</option>
             <option value="red">red</option>
             <option value="black">black</option>
         </select>
-        <label for="quantity-select">Quantity:</label>
-        <select name="quantity" id="quantity-select">
+      </div>
+      <div id="quantity-select">
+        <label for="quantity-select">Quantity:</label><br>
+        <select name="quantity" id="quantity-select" style="width:65%;">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -220,11 +240,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
+</div>
+        <button type="submit" name="botn2">Add to Cart</button>
 
-        <button type="button">Add to Cart</button>
-    </div>
+</form>
+ </div>
 
     <div class="item">
+      <form class="fff" action="http://localhost/Blue-lock/Back-end/pay.php" method="post" >
         <h3>New Balance</h3>
         <figure>
             <img src="../Front-end/Media/home-images/testimonial-1.jpg" alt="a New Balance scoter in olive drab with a black logo">
@@ -233,8 +256,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
         </figure>
   <p class="price">$15 USD</p>
         <p class="special">Take one now !</p>
-        <label for="size-select">Time:/h</label>
-        <select name="size" id="size-select">
+        <div class="">
+
+
+        <label for="size-select">Time:/h</label><br>
+        <select name="size" id="size-select" style="width:65%;">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -248,15 +274,19 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <option value="10">11</option>
             <option value="10">12</option>
         </select>
-        <label for="color-select">Color:</label>
-        <select name="color" id="color-select">
+          </div>
+          <div id="quantity-select">
+        <label for="color-select">Color:</label><br>
+        <select name="color" id="color-select" style="width:65%;">
             <option value=""></option>
             <option value="blue" >blue</option>
             <option value="red">red</option>
             <option value="black">black</option>
         </select>
-        <label for="quantity-select">Quantity:</label>
-        <select name="quantity" id="quantity-select">
+          </div>
+        <div id="quantity-select">
+        <label for="quantity-select">Quantity:</label><br>
+        <select name="quantity" id="quantity-select" style="width:65%;">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -264,7 +294,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])){
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-        <button type="button">Add to Cart</button>
+          </div>
+        <button type="submit" name="botn3">Add to Cart</button>
+</form>
     </div>
 
     <script src="../Front-end/Front-end/CCSs/bootstrap.min.css"></script> <!-- Bootstrap framework -->

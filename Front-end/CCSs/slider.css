@@ -144,7 +144,7 @@ h2 {
 }
 
 .item button {
-	width: 70%;
+	width: 50%;
 	color: #d99904;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -185,6 +185,7 @@ select {
 	border: solid 1px #efefef;
 	margin-bottom: 1.2rem;
 	outline: none;
+
 	border-radius: 0.75rem;
 	transition: box-shadow 200ms ease-out;
 }
